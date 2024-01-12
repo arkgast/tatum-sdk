@@ -1,0 +1,19 @@
+{
+  "name": "tatum-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arkgast/tatum-sdk.git",
+  "author": "Arnold Gandarillas Castillo <arkgast@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tatumio/tatum": "^4.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0"
+  }
+}
