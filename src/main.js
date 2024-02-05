@@ -8,7 +8,7 @@ const MNEMONIC = process.env.MNEMONIC;
 
 const initializeTatumSdk = async () => {
   return await TatumSDK.init({
-    network: Network.POLYGON,
+    network: Network.ETHEREUM_SEPOLIA,
     configureWalletProviders: [EvmWalletProvider],
   });
 };
@@ -28,7 +28,7 @@ async function generateAddress() {
 
   const addressFromMnemonic = await tatumSdk.walletProvider
     .use(EvmWalletProvider)
-    .generateAddressFromMnemonic(MNEMONIC, 0);
+    .generateAddressFromMnemonic(MNEMONIC, 1);
 
   console.log({ addressFromMnemonic });
 }
