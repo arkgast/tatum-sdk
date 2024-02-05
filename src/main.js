@@ -23,4 +23,24 @@ async function generatePrivateKey() {
   console.log({ privateKey });
 }
 
-generatePrivateKey().then(() => process.exit(0));
+async function generateAddress() {
+  const tatumSdk = await initializeTatumSdk();
+
+  const addressFromMnemonic = await tatumSdk.walletProvider
+    .use(EvmWalletProvider)
+    .generateAddressFromMnemonic(MNEMONIC, 0);
+
+  console.log({ addressFromMnemonic });
+}
+
+async function main() {
+  await generatePrivateKey();
+
+  await generateAddress();
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch((e) => {
+    console.log(e);
+  });
