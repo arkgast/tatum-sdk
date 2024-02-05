@@ -5,6 +5,7 @@ const { EvmWalletProvider } = require("@tatumio/evm-wallet-provider");
 config();
 
 const MNEMONIC = process.env.MNEMONIC;
+const XPUB = process.env.XPUB;
 
 const initializeTatumSdk = async () => {
   return await TatumSDK.init({
@@ -30,7 +31,11 @@ async function generateAddress() {
     .use(EvmWalletProvider)
     .generateAddressFromMnemonic(MNEMONIC, 1);
 
-  console.log({ addressFromMnemonic });
+  const addressFromXpub = await tatumSdk.walletProvider
+    .use(EvmWalletProvider)
+    .generateAddressFromXpub(XPUB, 1);
+
+  console.log({ addressFromMnemonic, addressFromXpub });
 }
 
 async function main() {
