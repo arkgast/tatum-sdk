@@ -1,5 +1,7 @@
 module.exports = {
-  extends: [
-    'semistandard'
-  ]
+  env: {
+    node: true,
+    jest: true,
+  },
+  extends: ["eslint:recommended", "prettier"],
 };
