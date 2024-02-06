@@ -115,10 +115,10 @@
     ethereumjs-wallet "^1.0.2"
     ethers "^6.7.1"
 
-"@tatumio/tatum@4.2.5":
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/@tatumio/tatum/-/tatum-4.2.5.tgz#c15d33dd7a74722083ad66d5a3221b9af3106d86"
-  integrity sha512-QkOD6+q3f0hXvvN/S6s4DYZQwnooHL5NYGA/etGdoBXQl+/J+oNbG7plySzvPzhZfQn3P5Ps6L3wZyrJSwyqzw==
+"@tatumio/tatum@4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@tatumio/tatum/-/tatum-4.2.4.tgz#6b9f8cc227eddb8321ad8415132bcc98e2ea970a"
+  integrity sha512-9ojCnSDVzY++DZ1xdQPIIIDyjGIGReVQA9yHqtEGycGFzUE3/LfQ6OVjEFQixj0BSUMPvm68f4D2qxCzxGJQbA==
   dependencies:
     bignumber.js "^9.1.1"
     chalk "^4.1.2"
