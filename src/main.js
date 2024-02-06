@@ -1,6 +1,6 @@
-const { config } = require("dotenv");
-const { TatumSDK, Network } = require("@tatumio/tatum");
-const { EvmWalletProvider } = require("@tatumio/evm-wallet-provider");
+import { config } from "dotenv";
+import { TatumSDK, Network } from "@tatumio/tatum";
+import { EvmWalletProvider } from "@tatumio/evm-wallet-provider";
 
 config();
 
